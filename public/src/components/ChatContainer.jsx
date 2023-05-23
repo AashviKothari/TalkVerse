@@ -119,8 +119,6 @@ const Container = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #ffffff39;
-    height:72px;
     padding: 0 2rem;
     .user-details {
       display: flex;
