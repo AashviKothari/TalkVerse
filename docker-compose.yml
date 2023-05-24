@@ -1,0 +1,21 @@
+version: '3'
+services:
+  public:
+    build:
+      context: ./public
+      dockerfile: Dockerfile
+    ports:
+      - '3000:3000'
+    volumes:
+      - './public:/app'
+    depends_on:
+      - server
+  server:
+    build:
+      context: ./server
+      dockerfile: Dockerfile
+    ports:
+      - '5000:5000'
+    volumes:
+      - './server:/app'
+    
